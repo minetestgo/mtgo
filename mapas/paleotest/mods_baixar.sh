@@ -1,8 +1,10 @@
+#!/bin/bash
 
 function foo () {
     git clone https://github.com/minetestgo/$1.git
     cd $1
     git reset --hard $2
+    cd ..
     return 0
 }
 
